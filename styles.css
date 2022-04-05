@@ -212,6 +212,54 @@ footer p {
 }
 
 
+
+/*==========================
+contact page
+==========================*/
+article h2{
+  margin: 2rem;
+}
+article h3{
+  padding: 0 0 1rem 0;
+  text-decoration: underline;
+}
+
+article a{
+  text-decoration: none;
+  color: white;
+}
+.location-1 {
+  background: rgb(230, 187, 107);
+
+  color: white;
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.location-2{
+  background: rgb(144, 185, 212);
+
+  color: white;
+  margin: 2rem;
+  padding: 2rem;
+
+}
+
+.location-3{
+  background: rgb(209, 104, 63);
+
+  color: white;
+  margin: 2rem;
+  padding: 2rem;
+}
+.location-4{
+  background: rgb(134, 133, 132);
+
+  color: white;
+  margin: 2rem;
+  padding: 2rem;
+
+}
 /*==========================
 General 
 ==========================*/
