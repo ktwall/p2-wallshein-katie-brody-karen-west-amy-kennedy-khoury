@@ -218,10 +218,12 @@ contact page
 ==========================*/
 article h2{
   margin: 2rem;
+  font-size: 2rem;
 }
 article h3{
   padding: 0 0 1rem 0;
   text-decoration: underline;
+  font-size: 1.5rem;
 }
 
 article a{
