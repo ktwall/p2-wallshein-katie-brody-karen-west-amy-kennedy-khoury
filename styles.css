@@ -191,31 +191,36 @@ Footer
 footer {
   text-align: center;
   padding: 2%;
-  max-width: 35%;
-  display: block;
   margin: 2% auto;
   font-size: 1.25em;
-  display: inline-block;
+ 
+  background-color: rgb(209, 104, 63);
 }
 
 footer p {
   font-size: 1.25em;
-  color: #f2526f;
+  
 }
 
-.footer ul {
-  background-color: #f4d2c7;
+footer ul {
+  
   padding: 0.75em;
   position: relative;
   font-family: "Century Gothic";
-  color: #ffffff;
+  
+  font-weight: 600;
 }
+footer a {
+  text-decoration: none;
+  color: white;
 
+}
 
 
 /*==========================
 contact page
 ==========================*/
+
 article h2{
   margin: 2rem;
   font-size: 2rem;
@@ -229,6 +234,16 @@ article h3{
 article a{
   text-decoration: none;
   color: white;
+}
+
+article .social h3{
+  color: rgb(209, 104, 63);
+  text-decoration: none;
+}
+
+article .social img{
+  padding: 10px;
+  box-shadow: 10px 10px 5px rgb(209, 104, 63);
 }
 .location-1 {
   background: rgb(230, 187, 107);
@@ -262,6 +277,7 @@ article a{
   padding: 2rem;
 
 }
+
 /*==========================
 General 
 ==========================*/
