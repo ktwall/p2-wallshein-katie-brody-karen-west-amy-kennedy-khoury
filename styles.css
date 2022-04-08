@@ -153,7 +153,7 @@ table {
 Top Nav
 ==========================*/
 
-.element {
+/* .element {
   display: none;
   overflow: hidden;
 }
@@ -182,7 +182,7 @@ Top Nav
 
 .element .nav-items .nav-link:hover a {
   text-decoration-color: #f4d2c7;
-}
+} */
 
 
 
@@ -216,6 +216,27 @@ footer a {
   text-decoration: none;
   color: white;
 
+}
+
+
+/*==========================
+home page
+==========================*/
+
+.description {
+  text-align: center;
+  padding: 0 15% 0 15%;
+  color: rgb(209, 104, 63);
+}
+
+.description h2{
+  padding: 1%;
+}
+
+
+.banner img, .banner2 img {
+  max-width: 95%;
+  padding: 5%;
 }
 
 
