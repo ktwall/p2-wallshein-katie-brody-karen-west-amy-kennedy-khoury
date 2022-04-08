@@ -1,0 +1,66 @@
+button {
+    cursor: pointer;
+  }
+  
+  .menu-btn {
+    display: flex;
+    flex-direction: column;
+    height: 24px;
+    width: 30px;
+    background-color: white;
+    border: solid 1px;
+    border-radius: 4px;
+    align-items: center;
+    transition: background-color 300ms;
+    overflow: hidden; 
+    &:hover, &:focus {
+      background-color: #eee;
+    }
+    span {
+      height: 4px;
+      line-height: 0;
+      pointer-events: none;
+    }
+  }
+  
+  .menu {
+    background-color: black;
+    width: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transition: transform 300ms;
+    transform: translateX(-250px);
+    overflow: hidden;
+    button.close-btn {
+      color: white;
+      background-color: black;
+      border: none;
+      font-size: 2rem;
+      display: block;
+      margin-left: auto;
+    }
+    ul {
+      list-style: none;
+      margin-top: 48px;
+      padding: 0;
+      li {
+        &:hover {
+          background-color: #333;
+        }
+        a {
+          padding: 24px;
+          display: inline-block;
+          width: 100%;
+          &:focus {
+            background-color: #333;
+          }
+        }
+      }
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
