@@ -49,105 +49,49 @@ table {
   border-spacing: 0;
 }
 
-/*==========================
-  Burger Menu
-==========================*/
 
-/* #menu__toggle {
-  opacity: 0;
+
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
 }
 
-#menu__toggle:checked ~ .menu__btn > span {
-  transform: rotate(45deg);
-}
-#menu__toggle:checked ~ .menu__btn > span::before {
-  top: 0;
-  transform: rotate(0);
-}
-#menu__toggle:checked ~ .menu__btn > span::after {
-  top: 0;
-  transform: rotate(90deg);
-}
-#menu__toggle:checked ~ .menu__box {
-  visibility: visible;
-  left: 0;
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
 }
 
-.menu__btn {
-  display: flex;
-  align-items: center;
-  position: fixed;
-  top: 20px;
-  left: 20px;
-
-  width: 26px;
-  height: 26px;
-
-  cursor: pointer;
-  z-index: 1;
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
 }
 
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
   display: block;
   position: absolute;
-
-  width: 100%;
-  height: 2px;
-
-  background-color: #3951aa;
-
-  transition-duration: 0.25s;
-}
-.menu__btn > span::before {
-  content: "";
-  top: -8px;
-}
-.menu__btn > span::after {
-  content: "";
-  top: 8px;
-}
-
-.menu__box {
-  display: block;
-  position: fixed;
-  visibility: hidden;
+  right: 0;
   top: 0;
-  left: -100%;
-
-  width: 15em;
-  height: 100%;
-
-  margin: 0;
-  padding: 80px 0;
-
-  list-style: none;
-
-  background-color: #ffffff;
-  box-shadow: 1px 0px 6px #f5d3c8;
-
-  transition-duration: 0.25s;
 }
 
-.menu__item {
-  display: block;
-  padding: 12px 24px;
-
-  color: #f2526f;
-
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 1em;
-  font-weight: 600;
-
-  text-decoration: none;
-
-  transition-duration: 0.25s;
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
-.menu__item:hover {
-  background-color: #f4d2c7;
-} */
 
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #d1683f;
+  color: white;
+}
 
 /*==========================
 Top Nav
@@ -165,7 +109,7 @@ Top Nav
 }
 
 .element .nav-items .nav-link {
-  background-color: #587ee3;
+  background-color: #d1683f;
   padding: 0.75em;
   font-size: 1.25em;
   position: relative;
@@ -174,7 +118,7 @@ Top Nav
   border-right: 2px solid #fff;
 }
 .element .nav-items .nav-link:hover {
-  background-color: #374fa9;
+  background-color: rgb(134, 133, 132);
   text-decoration-color: #ffffff;
   opacity: 0.9;
   transition: left 0s ease 0s, opacity 0.6s ease 0s;
@@ -302,45 +246,12 @@ article .social img{
 }
 
 
-
-
-
-
-/*========================
-About
-========================*/
-
-
-.about-box, p {
-
-  margin:45px;
-  padding: 45px;
-  font-size: 20px;
-
-}
-
-.about-box, h1 {
-
-  margin:55px;
-  text-align: center;
-  font-size: 45px;
-  margin-bottom: 59px;
-
-}
-
-
-
-
-
-/*==========================
-General 
-==========================*/
 /*==========================
 Media Queries
 ==========================*/
 
 @media screen and (min-width: 780px) {
-  .menu {
+  .topnav {
     display: none;
   }
   .element {
@@ -349,4 +260,16 @@ Media Queries
   .element .nav-items .nav-link {
     font-size: 18px;
   }
+}
+
+@media screen and (min-width: 1000px) {
+.menu-btn1 {
+  display: none;
+}
+}
+
+@media screen and (max-width: 775px) {
+.header1 h1 {
+  display: none;
+}
 }
