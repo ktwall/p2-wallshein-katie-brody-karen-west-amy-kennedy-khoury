@@ -27,13 +27,27 @@ function readmore() {
     }
   }
 
+// API //
+var dogEl = document.getElementById('breedPhoto')
+var button = document.querySelector('button')
 
+button.onclick = function(e) {
+  document.getElementById('breedPhoto').innerHTML = ""
+  fetch('https://dog.ceo/api/breeds/image/random')
+  .then(function(response) {
+    return response.json()
+  })
+  .then(function(data) {
+    console.log(data.message)
 
+    var div = document.createElement('div')
+    var img = document.createElement('img')
+    img.src = data.message
+    div.appendChild(img)
 
-
-
-
-
+    dogEl.appendChild(div)
+  })  
+}
 
 //footer//
 document.getElementById('img1').onclick=function(){myFunction()};
@@ -44,6 +58,9 @@ document.getElementById('img2').onclick=function(){myFunction()};
 function myFunction(){
     alert("You will be redirected to our Instagram"); 
 }
+
+
+
 
 
 
