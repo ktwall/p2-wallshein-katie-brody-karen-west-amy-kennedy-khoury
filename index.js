@@ -1,43 +1,13 @@
 // burger menu //
 
-var menuButton = document.querySelector('.menu-btn')
-var closeButton = document.querySelector('.close-btn')
-var menu = document.querySelector('.menu')
-
-var menuOpen = false
-
-function toggleMenu() {
-  if (menuOpen) {
-    menu.style.transform = 'translateX(-250px)'
-    menuOpen = false
+function myFunction1() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
   } else {
-    menu.style.transform = 'translateX(0)'
-    menuOpen = true
+    x.style.display = "block";
   }
 }
-
-menuButton.onclick = toggleMenu
-closeButton.onclick = toggleMenu
-
-window.addEventListener("click", function(e) {
-  if (!menuOpen) return
-  if (e.target === menuButton || e.target === closeButton) return
-  if (!menu.contains(e.target)) toggleMenu()
-})
-
-window.addEventListener("keydown", function(e) {
-  if (!menuOpen) return
-  var linkList = document.querySelectorAll('.menu a')
-  var lastLink = linkList[linkList.length - 1]
-  if (e.key === 'Tab' && !e.shiftKey && document.activeElement === lastLink) {
-    closeButton.focus()
-    e.preventDefault()    
-  }
-  if (e.key === 'Tab' && e.shiftKey && document.activeElement === closeButton) {
-    lastLink.focus()
-    e.preventDefault()    
-  }
-})
 
 // about //
 
