@@ -29,7 +29,7 @@ function readmore() {
 
 // API //
 var dogEl = document.getElementById('breedPhoto')
-var button = document.querySelector('button')
+var button = document.getElementById('photo')
 
 button.onclick = function(e) {
   document.getElementById('breedPhoto').innerHTML = ""
