@@ -301,6 +301,37 @@ article .social img{
 
 }
 
+
+
+
+
+
+/*========================
+About
+========================*/
+
+
+.about-box, p {
+
+  margin:45px;
+  padding: 45px;
+  font-size: 20px;
+
+}
+
+.about-box, h1 {
+
+  margin:55px;
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 59px;
+
+}
+
+
+
+
+
 /*==========================
 General 
 ==========================*/
