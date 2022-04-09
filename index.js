@@ -50,14 +50,22 @@ button.onclick = function(e) {
 }
 
 //footer//
-document.getElementById('img1').onclick=function(){myFunction()};
-function myFunction(){
-    alert("You will be redirected to our Instagram"); 
+document.getElementById('img1').onclick = function(e) {
+  alert("You will be redirected to our Instagram."); 
 }
-document.getElementById('img2').onclick=function(){myFunction()};
-function myFunction(){
-    alert("You will be redirected to our Instagram"); 
+document.getElementById('img2').onclick = function(e) {
+    alert("You will be redirected to our Facebook page."); 
 }
+
+// //footer//
+// document.getElementById('img1').onclick=function(){myFunction()};
+// function myFunction(){
+//     alert("You will be redirected to our Instagram."); 
+// }
+// document.getElementById('img2').onclick=function(){myFunction()};
+// function myFunction(){
+//     alert("You will be redirected to our Facebook page."); 
+// }
 
 
 
