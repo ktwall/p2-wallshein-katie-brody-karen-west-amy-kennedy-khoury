@@ -288,7 +288,10 @@ About Page
   color: rgb(209, 104, 63);
 }
 
+.meow h2 {
 
+  color:rgb(209, 104, 63); 
+}
 
 .api button,
 .about-box button,
