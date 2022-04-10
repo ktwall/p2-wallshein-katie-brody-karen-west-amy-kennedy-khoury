@@ -57,6 +57,15 @@ document.getElementById('img2').onclick = function(e) {
     alert("You will be redirected to our Facebook page."); 
 }
 
+function myFunction() {
+  document.getElementById('img1')
+  alert("You will be redirected to our Instagram.");
+}
+
+function myfunction() {
+  document.getElementById('img2')
+  alert("You will be redirected to our Facebook page.");
+}
 
 //modal button//
 // Get the modal
