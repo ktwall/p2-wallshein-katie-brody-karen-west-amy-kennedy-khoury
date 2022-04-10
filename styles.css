@@ -372,14 +372,41 @@ Media Queries
   }
 }
 
+
+.k-about.png {
+
+
+  max-width: 100%;  
+  
+}
+
+
 @media screen and (min-width: 1000px) {
 .menu-btn1 {
   display: none;
 }
 }
 
+
+.k-about.png {
+
+
+  max-width: 100%;
+  
+  
+}
+
 @media screen and (max-width: 775px) {
 .header1 h1 {
   display: none;
 }
+}
+
+
+.k-about.png {
+
+
+  max-width: 100%;
+  
+  
 }
