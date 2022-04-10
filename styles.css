@@ -281,12 +281,14 @@ About Page
 .about-box h2 {
   padding: 1rem 0;
   font-size: 3rem;
-  color:rgb(209, 104, 63)
+  color:rgb(209, 104, 63);
 }
 .api h2{
   padding: 1rem 0;
-  color:
+  color: rgb(209, 104, 63);
 }
+
+
 
 .api button,
 .about-box button,
